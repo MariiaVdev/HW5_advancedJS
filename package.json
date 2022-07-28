@@ -1,0 +1,11 @@
+{
+  "name": "hw5",
+  "version": "1.0.0",
+  "description": "Homework 5 advanced JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariia Voloshchuk",
+  "license": "ISC"
+}

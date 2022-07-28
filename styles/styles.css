@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: grid;
+  grid-template-areas:
+    "card__image card__title card__btn"
+    "card__text card__text card__text";
+  justify-content: left;
+  align-items: center;
+  box-sizing: border-box;
+  width: 420px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 20px 20px;
+    grid-auto-columns: 125px;
+}
+.card p {
+  padding-bottom: 5px;
+}
+.card__image {
+  grid-area: card__image;
+  padding-right: 10px;
+}
+.card__photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 75%;
+}
+.card__title {
+  grid-area: card__title;
+  grid-column: 1/2;
+  padding-left: 70px;
+}
+.card__btn {
+  grid-area: card__btn;
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+.card__btn img {
+  float: right;
+}
+.card__text {
+  grid-area: card__text;
+  padding-top: 20px;
+}
+button {
+  width: fit-content;
+  box-sizing: border-box;
+  padding-top: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  filter: brightness(0.9);
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  height: 20px;
+  width: 80px;
+  background-color: #23649e;
+  color: white;
+}
+.card__delBtn {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #cef;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+.hidden {
+  display: none;
+}
+.addPost {
+  text-align: center;
+}
+.btn__addPost {
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  height: 60px;
+  width: 250px;
+  font-size: 24px;
+  color: white;
+  background-color: #23649e;
+}
